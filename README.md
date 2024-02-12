@@ -32,3 +32,10 @@ run the inference script
 ```
 python test_diffusion.py
 ```
+
+
+Editing the code can be done at
+
+```
+diffusers/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion.py
+```
