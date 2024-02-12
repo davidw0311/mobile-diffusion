@@ -14,3 +14,21 @@ Then clone repository with all submodules
 ```
 git clone --recurse-submodules https://github.com/davidw0311/mobile-diffusion.git
 ```
+
+Initialize a conda environment, then run
+```
+cd diffusers
+pip install -e .
+```
+
+Install the following dependencies
+```
+pip install torch
+pip install transformers
+pip install accelerate
+```
+
+run the inference script
+```
+python test_diffusion.py
+```
