@@ -15,6 +15,11 @@ Then clone repository with all submodules
 git clone --recurse-submodules https://github.com/davidw0311/mobile-diffusion.git
 ```
 
+if submodules are missing, or the above commands were not run properly, run
+```
+git submodule update --init --recursive
+```
+
 Initialize a conda environment, then run
 ```
 cd diffusers
