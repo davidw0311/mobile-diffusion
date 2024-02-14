@@ -44,3 +44,12 @@ Editing the code can be done at
 ```
 diffusers/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion.py
 ```
+
+To start the wandb demo the following additional steps are required
+```
+pip install wandb
+pip install fastdownload
+pip install fastprogress
+
+wandb login --relogin
+```
