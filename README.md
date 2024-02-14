@@ -44,3 +44,9 @@ Editing the code can be done at
 ```
 diffusers/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion.py
 ```
+
+Using the QWEN model requires the following libraries to be additionally installed
+
+```
+pip install transformers_stream_generator
+```
