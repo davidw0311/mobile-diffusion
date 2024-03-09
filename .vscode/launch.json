@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "test diffusion",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "/Users/davidw/Desktop/David/NUS/_Classes/CS5260_deep_learning_2/project/mobile-diffusion",
+            "program": "test_diffusion.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}

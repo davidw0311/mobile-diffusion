@@ -53,3 +53,23 @@ pip install fastprogress
 
 wandb login --relogin
 ```
+
+## Custom files naming conventions
+All modified files will follow the convention of 
+```<original_file_name>_mdCustom.py```
+
+All modified classes will follow the convention of 
+```class <originalClassname>_mdCustom```
+
+After making creating copies of these files, make sure to update the dependencies in by including the custom files or classes.
+
+[diffusers/src/diffusers/\_\_init\_\_.py](diffusers/src/diffusers/__init__.py)
+
+[diffusers/src/diffusers/pipelines/\_\_init\_\_.py](diffusers/src/diffusers/pipelines/__init__.py)
+
+[diffusers/src/diffusers/pipelines/stable_diffusion/\_\_init\_\_.py](diffusers/src/diffusers/pipelines/stable_diffusion/__init__.py)
+
+
+
+
+
