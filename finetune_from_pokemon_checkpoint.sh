@@ -1,0 +1,21 @@
+accelerate launch diffusers/examples/text_to_image/train_text_to_image.py \
+	--pretrained_model_name_or_path="sd-pokemon-model-from-scratch" \
+	--dataset_name="lambdalabs/pokemon-blip-captions" \
+	--resolution=512 --center_crop --random_flip \
+	--train_batch_size=1 --gradient_accumulation_steps=4 \
+       	--gradient_checkpointing \
+	--mixed_precision="fp16" \
+	--max_train_steps=500000 \
+	--learning_rate=1e-05 \
+	--max_grad_norm=1 \
+	--lr_scheduler="constant" \
+	--lr_warmup_steps=0 \
+	--output_dir="sd-pokemon-model-from-scratch" \
+	--checkpointing_steps=50000 \
+	--resume_from_checkpoint="checkpoint-150000" \
+	--tracker_project_name="train-from-pokemon-checkpoint" \
+	--seed 666666 \
+	--report_to "wandb" \
+	--validation_prompts="a colorful bird flying through the air" \
+	--validation_epochs=1 \
+	--snr_gamma=5
