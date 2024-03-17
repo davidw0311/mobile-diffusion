@@ -10,7 +10,9 @@
             "request": "launch",
             "cwd": "/Users/davidw/Desktop/David/NUS/_Classes/CS5260_deep_learning_2/project/mobile-diffusion",
             "program": "test_diffusion.py",
-            "console": "integratedTerminal"
-        }
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+
     ]
 }
